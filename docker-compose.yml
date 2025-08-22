@@ -1,0 +1,17 @@
+services:
+  app:
+    image: ghcr.io/factory360org/f360-vision/app:${VERSION:-latest}
+    ports:
+      - "${APP_PORT}:80"
+    depends_on:
+      - viewer-backend
+
+  viewer-backend:
+    image: ghcr.io/factory360org/f360-vision/viewer-backend:${VERSION:-latest}
+    environment:
+      API_KEY: "${VIEWER_BACKEND_API_KEY}"
+      PROJECT_FILE_PASSWORD: "${PROJECT_FILE_PASSWORD}"
+    ports:
+      - "${VIEWER_BACKEND_PORT}:8000"
+    volumes:
+      - ./output:/data/projects

@@ -12,7 +12,11 @@ ZIP_NAME="f360-vision.zip"
 curl -fsSL "$REPO_URL/archive/$BRANCH.zip" -o "$ZIP_NAME"
 
 # Unzip to target directory
+<<<<<<< HEAD
 unzip "$ZIP_NAME" "f360-vision-$BRANCH/*" "f360-vision-$BRANCH/**/*" -d "$TARGET_DIR"
+=======
+unzip "$ZIP_NAME" "f360-vision-$BRANCH/*" -d "$TARGET_DIR"
+>>>>>>> 31554d596c0a6fbbe5193b8e42bb6d3f8a34d5bd
 
 # Delete the zip
 rm -f "$ZIP_NAME"

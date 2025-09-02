@@ -4,25 +4,34 @@
 
 # f360 Vision
 
-## Docs
+## Hosting
 
-### Hosting
+### Requirements
 
-#### Docker
+Install Docker and login to the GitHub docker registry using the token that was provided:
 
-##### Setup
+```sh
+docker login ghcr.io -u f360-vision-user -p <your_token>
+```
 
-checkout repo
+### Setup
 
-Setup.sh
+#### Linux / MacOS
 
-Copy docker-compose.yml and the start + stop scripts. For Windows use `start.ps1` and for Linux / Mac use `start.sh`.
-Also create a `.env` file. Use the `.env.example` as a template.
+```sh
+curl -fsSL https://raw.githubusercontent.com/factory360org/f360-vision/main/unix/install.sh | bash
+```
 
-##### Start
+#### Windows
 
-Run the start script with administrator / sudo rights. This will build the Docker image and start the container.
+```powershell
+irm https://raw.githubusercontent.com/factory360org/f360-vision/main/install.ps1 | iex
+```
 
-##### Stop
+#### Start
+
+Run the start script with administrator / sudo rights. This will pull the Docker images and start the containers.
+
+#### Stop
 
 Run the stop script.

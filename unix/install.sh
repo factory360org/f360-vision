@@ -8,9 +8,6 @@ REPO_URL="https://github.com/factory360org/f360-vision"
 BRANCH="main"
 ZIP_NAME="f360-vision.zip"
 
-# print target_dir
-echo "Target directory: $TARGET_DIR"
-
 # Download repo as zip
 curl -fsSL "$REPO_URL/archive/$BRANCH.zip" -o "$ZIP_NAME"
 

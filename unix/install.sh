@@ -20,16 +20,16 @@ unzip "$ZIP_NAME" -d "$TARGET_DIR"
 # Delete the zip
 rm -f "$ZIP_NAME"
 
-mv "f360-vision-$BRANCH/*" "f360-vision-$BRANCH/.*" "$TARGET_DIR"
-
 # Enter the extracted repo directory
 cd "$TARGET_DIR"
 
+mv f360-vision-$BRANCH/* f360-vision-$BRANCH/.* "$TARGET_DIR"
+
 # Copy contents to target directory
-cp -r "unix/*" .
+mv unix/* .
 
 # Remove extracted folders
-rm -rf "f360-vision-$BRANCH/" "unix/" "winos/" "docs/" ".gitignore"
+rm -rf f360-vision-$BRANCH/ unix/ winos/ docs/ .gitignore
 
 # Run setup script
 bash setup.sh

@@ -14,7 +14,7 @@ This project consists of multiple integrated components working together to prov
 - **Viewer Backend**: Serves processed 3D data and coordinates to the web application
 - **Desktop Application**: Cross-platform desktop client
 
-## Hosting
+## Server hosting
 
 ### Requirements
 
@@ -69,6 +69,10 @@ Run the stop script.
 ```powershell
 Start-Process powershell -Verb runAs -ArgumentList './stop.ps1'
 ```
+
+#### Update
+
+Update the VERSION=x.x.x variable in the .env file and run the start script again.
 
 ## Usage
 

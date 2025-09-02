@@ -14,4 +14,4 @@ services:
     ports:
       - "${VIEWER_BACKEND_PORT}:8000"
     volumes:
-      - ./output:/data/projects
+      - ./projects:/data/projects

@@ -77,3 +77,4 @@ Update the VERSION=x.x.x variable in the .env file and run the start script agai
 ## Usage
 
 Once started, the system will be available at the configured endpoint.
+Place the `.f360` files in the created `projects` directory.

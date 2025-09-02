@@ -12,16 +12,19 @@ ZIP_NAME="f360-vision.zip"
 curl -fsSL "$REPO_URL/archive/$BRANCH.zip" -o "$ZIP_NAME"
 
 # Unzip to target directory
-unzip -q "$ZIP_NAME" -d "$TARGET_DIR"
+unzip "$ZIP_NAME" "f360-vision-$BRANCH/*" "f360-vision-$BRANCH/**/*" -d "$TARGET_DIR"
 
 # Delete the zip
 rm -f "$ZIP_NAME"
 
+# Enter the extracted repo directory
 cd "$TARGET_DIR"
 
-# Copy contents to target directory (if not already in place)
-cp -r "unix"/* .
+# Copy contents to target directory
+cp -r unix/* .
 
 # Remove extracted folders
-rm -rf "unix" "winos" "docs"
+rm -rf unix winos docs
+
+# Run setup script
 bash setup.sh

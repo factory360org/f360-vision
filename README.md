@@ -1,8 +1,18 @@
 <div align="center">
-		<img src="docs/logo.png" alt="Factory360 Logo" />
+	<img src="docs/logo.png" alt="Factory360 Logo" />
 </div>
 
 # f360 Vision
+
+**f360 Vision** is a comprehensive 3D point cloud visualization and measurement platform designed for industrial environments. It combines powerful 3D point cloud processing capabilities with panoramic imagery to provide an immersive visualization and analysis experience for factory floors, industrial facilities, and other complex environments.
+
+## Overview
+
+This project consists of multiple integrated components working together to provide a complete 3D visualization solution:
+
+- **Web Application**: A modern frontend for viewing and interacting with 3D point clouds and panoramic images
+- **Viewer Backend**: Serves processed 3D data and coordinates to the web application
+- **Desktop Application**: Cross-platform desktop client
 
 ## Hosting
 
@@ -25,13 +35,41 @@ curl -fsSL https://raw.githubusercontent.com/factory360org/f360-vision/main/unix
 #### Windows
 
 ```powershell
-irm https://raw.githubusercontent.com/factory360org/f360-vision/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/factory360org/f360-vision/main/winos/install.ps1 | iex
 ```
 
 #### Start
 
 Run the start script with administrator / sudo rights. This will pull the Docker images and start the containers.
 
+##### Linux / MacOS
+
+```sh
+./unix/start.sh
+```
+
+##### Windows
+
+```powershell
+Start-Process powershell -Verb runAs -ArgumentList './start.ps1'
+```
+
 #### Stop
 
 Run the stop script.
+
+##### Linux / MacOS
+
+```sh
+./unix/stop.sh
+```
+
+##### Windows
+
+```powershell
+Start-Process powershell -Verb runAs -ArgumentList './stop.ps1'
+```
+
+## Usage
+
+Once started, the system will be available at the configured endpoint.

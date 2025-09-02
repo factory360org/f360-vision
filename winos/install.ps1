@@ -48,3 +48,5 @@ if (Test-Path $SetupScript) {
 } else {
     Write-Host "setup.ps1 not found, skipping."
 }
+
+Write-Host "Setup complete. Use the start script in: $TargetDir"

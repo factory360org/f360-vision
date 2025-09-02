@@ -38,39 +38,39 @@ curl -fsSL https://raw.githubusercontent.com/factory360org/f360-vision/main/unix
 irm https://raw.githubusercontent.com/factory360org/f360-vision/main/winos/install.ps1 | iex
 ```
 
-#### Start
+### Start
 
 Run the start script with administrator / sudo rights. This will pull the Docker images and start the containers.
 
-##### Linux / MacOS
+#### Linux / MacOS
 
 ```sh
 ./start.sh
 ```
 
-##### Windows
+#### Windows
 
 ```powershell
 Start-Process powershell -Verb runAs -ArgumentList './start.ps1'
 ```
 
-#### Stop
+### Stop
 
 Run the stop script.
 
-##### Linux / MacOS
+#### Linux / MacOS
 
 ```sh
 ./stop.sh
 ```
 
-##### Windows
+#### Windows
 
 ```powershell
 Start-Process powershell -Verb runAs -ArgumentList './stop.ps1'
 ```
 
-#### Update
+### Update
 
 Update the VERSION=x.x.x variable in the .env file and run the start script again.
 

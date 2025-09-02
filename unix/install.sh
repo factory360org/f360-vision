@@ -29,7 +29,7 @@ cd "$TARGET_DIR"
 cp -r unix/* .
 
 # Remove extracted folders
-rm -rf f360-vision-$BRANCH unix winos docs
+rm -rf f360-vision-$BRANCH unix winos docs .gitignore
 
 # Run setup script
 bash setup.sh

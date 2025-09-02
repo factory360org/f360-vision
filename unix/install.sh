@@ -30,3 +30,5 @@ rm -rf f360-vision-$BRANCH/ unix/ winos/ docs/ .gitignore
 
 # Run setup script
 bash setup.sh
+
+echo "Setup complete. Use the start script in: $TARGET_DIR"

@@ -45,7 +45,7 @@ Run the start script with administrator / sudo rights. This will pull the Docker
 ##### Linux / MacOS
 
 ```sh
-./unix/start.sh
+./start.sh
 ```
 
 ##### Windows
@@ -61,7 +61,7 @@ Run the stop script.
 ##### Linux / MacOS
 
 ```sh
-./unix/stop.sh
+./stop.sh
 ```
 
 ##### Windows

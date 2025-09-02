@@ -1,22 +1,27 @@
 #!/usr/bin/env bash
 set -e
 
+# Usage: ./install.sh [target_directory]
+TARGET_DIR="${1:-$(pwd)}"
+
 REPO_URL="https://github.com/factory360org/f360-vision"
 BRANCH="main"
+ZIP_NAME="f360-vision.zip"
 
 # Download repo as zip
-curl -fsSL "$REPO_URL/archive/$BRANCH.zip" -o "f360-vision.zip"
+curl -fsSL "$REPO_URL/archive/$BRANCH.zip" -o "$ZIP_NAME"
 
+# Unzip to target directory
+unzip -q "$ZIP_NAME" -d "$TARGET_DIR"
 
-# Unzip to current directory
-unzip -q "f360-vision.zip" -d .
+# Delete the zip
+rm -f "$ZIP_NAME"
 
-# delete the zip
-rm -f "f360-vision.zip"
+cd "$TARGET_DIR"
 
-cp -r unix/* .
+# Copy contents to target directory (if not already in place)
+cp -r "unix"/* .
 
-rm -rf unix winos docs
-
-# Run setup script
+# Remove extracted folders
+rm -rf "unix" "winos" "docs"
 bash setup.sh

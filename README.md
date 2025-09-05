@@ -18,11 +18,7 @@ This project consists of multiple integrated components working together to prov
 
 ### Requirements
 
-Install Docker and login to the GitHub docker registry using the token that was provided:
-
-```sh
-docker login ghcr.io -u f360-vision-user -p <your_token>
-```
+Install [Docker](https://www.docker.com/).
 
 ### Setup
 

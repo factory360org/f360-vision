@@ -68,7 +68,11 @@ Start-Process powershell -Verb runAs -ArgumentList './stop.ps1'
 
 ### Update
 
-Update the VERSION=x.x.x variable in the .env file and run the start script again.
+**Update to latest version**  
+Either remove `VERSION` from .env or set `VERSION=latest`
+
+**Update to specific version**  
+Update the `VERSION=vX.Y.Z` variable in the .env file and run the start script again.
 
 ## Usage
 

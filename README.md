@@ -31,6 +31,7 @@ curl -fsSL https://raw.githubusercontent.com/factory360org/f360-vision/main/unix
 #### Windows
 
 ```powershell
+# powershell
 irm https://raw.githubusercontent.com/factory360org/f360-vision/main/winos/install.ps1 | iex
 ```
 
@@ -47,7 +48,8 @@ Run the start script with administrator / sudo rights. This will pull the Docker
 #### Windows
 
 ```powershell
-Start-Process powershell -Verb runAs -ArgumentList './start.ps1'
+# powershell
+./start.ps1
 ```
 
 ### Stop
@@ -63,7 +65,8 @@ Run the stop script.
 #### Windows
 
 ```powershell
-Start-Process powershell -Verb runAs -ArgumentList './stop.ps1'
+# powershell
+./stop.ps1
 ```
 
 ### Update

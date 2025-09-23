@@ -18,7 +18,7 @@ This project consists of multiple integrated components working together to prov
 
 ### Requirements
 
-Install [Docker](https://www.docker.com/).
+Install [Docker](https://www.docker.com/) and make sure Docker is running.
 
 ### Setup
 

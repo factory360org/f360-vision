@@ -14,6 +14,16 @@ This project consists of multiple integrated components working together to prov
 - **Viewer Backend**: Serves processed 3D data and coordinates to the web application
 - **Desktop Application**: Cross-platform desktop client
 
+## Desktop App
+
+Install the [latest version](https://github.com/factory360org/f360-vision/releases/latest) of the f360 Vision App for your operating system.
+
+⚠️ Hint for Windows installations
+> Make sure to set the path for .f360 files to a directory your Windows user has access to (e.g. Documents or Desktop).  
+> Otherwise f360 Vision might not recognize .f360 files due to a lack of permissions
+
+The default path for .f360 files on macOS is `/Users/<username>/Documents/f360 Vision`.
+
 ## Server hosting
 
 ### Requirements

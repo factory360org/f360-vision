@@ -20,7 +20,7 @@ Install the [latest version](https://github.com/factory360org/f360-vision/releas
 
 ⚠️ Hint for Windows installations
 > Make sure to set the path for .f360 files to a directory your Windows user has access to (e.g. Documents or Desktop).  
-> Otherwise f360 Vision might not recognize .f360 files due to a lack of permissions
+> Otherwise f360 Vision might not recognize .f360 files due to a lack of permissions (installing and starting f360 Vision with Admin-Permissions might help in this case)
 
 The default path for .f360 files on macOS is `/Users/<username>/Documents/f360 Vision`.
 

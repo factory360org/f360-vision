@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="docs/logo.png" alt="Factory360 Logo" />
+	<img src="docs/logo.svg" alt="Factory360 Logo" />
 </div>
 
 # f360 Vision

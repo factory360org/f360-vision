@@ -9,9 +9,9 @@ predefined or user-captured 3D positions in the point cloud that can be displaye
 
 - Connecting points do not outlive a page reload. After a page reload the points have to be set again using `set-connecting-points`
 - Do not worry about the point object. The object you receive from `point-captured` can be reused for `set-connecting-points`.
-- Visit the playground https://demo.f360vision.com/projects/Demo-Road/test-sdk
 - The integration is available from version `1.1.7` and onwards
 - Right after the message viewer-ready is sent the point-captured message is also sent each time the user clicks inside the pointcloud
+- You can access the playground on your own installation of f360 vision docker image: http(s)://your-f360-vision.com/projects/<projectId>/test-sdk
 
 <img style="max-height: 500px" src="connecting-points.png">
 
@@ -170,7 +170,7 @@ connecting points or sync state with your app.
 | Field             | Type        | Description                                                            |
 |-------------------|-------------|------------------------------------------------------------------------|
 | `type`            | string      | `"point-captured"`                                                     |
-| `position`        | `[x, y, z]` | Picked 3D position.                                                    |
+| `position`        | `[x, y, z]` | Picked 3D position in the original projection of the pointcloud        |
 | `camera`          | object      | *(optional)* Camera state at capture time (see Camera object above).   |
 | `panoramaImageId` | string      | *(optional)* Focused panorama image id at capture time, if applicable. |
 

@@ -91,3 +91,6 @@ Update the `VERSION=vX.Y.Z` variable in the .env file and run the start script a
 
 Once started, the system will be available at the configured endpoint.
 Place the `.f360` files in the created `projects` directory.
+
+## Integrations
+- [Connecting points](docs/connection-points-integration.md)

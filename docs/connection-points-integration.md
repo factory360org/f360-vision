@@ -12,6 +12,7 @@ predefined or user-captured 3D positions in the point cloud that can be displaye
 - The integration is available from version `1.1.7` and onwards
 - Right after the message viewer-ready is sent the point-captured message is also sent each time the user clicks inside the pointcloud
 - You can access the playground on your own installation of f360 vision docker image: http(s)://your-f360-vision.com/projects/<projectId>/test-sdk
+  - [Demo Playground](https://demo.f360vision.com/projects/Demo-Building/test-sdk)
 
 <img style="max-height: 500px" src="connecting-points.png">
 

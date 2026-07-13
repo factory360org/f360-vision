@@ -3,7 +3,7 @@
 </div>
 
 ![Latest Release](https://img.shields.io/github/v/release/factory360org/f360-vision)
-![License](https://img.shields.io/github/license/factory360org/f360-vision)
+![License](https://img.shields.io/badge/license-Proprietary-red)
 ![Docker](https://img.shields.io/badge/docker-ghcr.io-blue)
 
 # f360 Vision

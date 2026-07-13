@@ -1,3 +1,7 @@
+![Latest Release](https://img.shields.io/github/v/release/factory360org/f360-vision)
+![License](https://img.shields.io/github/license/factory360org/f360-vision)
+![Docker](https://img.shields.io/badge/docker-ghcr.io-blue)
+
 <div align="center">
 	<img src="docs/logo.svg" alt="Factory360 Logo" />
 </div>
